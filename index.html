@@ -11,5 +11,75 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="project-container">
+      <!-- Header -->
+      <div class="main-header">
+        <h1>Rock Paper Scissors Lizard Spock</h1>
+      </div>
+      <!-- Player Container -->
+      <div class="player1-container" id="player1">
+        <h2>
+          You - <span id="player1Score"></span
+          ><span class="pick" id="player1Choice"></span>
+        </h2>
+        <i
+          class="far fa-hand-rock"
+          title="Rock"
+          id="player1Rock"
+          onclick="select('rock')"
+        ></i>
+        <i
+          class="far fa-hand-paper"
+          title="Paper"
+          id="player1Paper"
+          onclick="select('paper')"
+        ></i>
+        <i
+          class="far fa-hand-scissors"
+          title="Scissors"
+          id="player1Scissors"
+          onclick="select('scissors')"
+        ></i>
+        <i
+          class="far fa-hand-lizard"
+          title="Lizard"
+          id="player1Lizard"
+          onclick="select('lizard')"
+        ></i>
+        <i
+          class="far fa-hand-spock"
+          title="Spock"
+          id="player1Spock"
+          onclick="select('spock')"
+        ></i>
+      </div>
+      <!-- Computer Container -->
+      <div class="player1-container" id="computer1">
+        <h2>
+          Computer - <span id="computer1Score"></span
+          ><span class="pick" id="computer1Choice"></span>
+        </h2>
+        <i class="far fa-hand-rock" title="Rock" id="computer1Rock"></i>
+        <i class="far fa-hand-paper" title="Paper" id="computer1Paper"></i>
+        <i
+          class="far fa-hand-scissors"
+          title="Scissors"
+          id="computer1Scissors"
+        ></i>
+        <i class="far fa-hand-lizard" title="Lizard" id="computer1Lizard"></i>
+        <i class="far fa-hand-spock" title="Spock" id="computer1Spock"></i>
+      </div>
+      <!-- Reset Icon -->
+      <i
+        class="fas fa-sync-alt reset-icon"
+        title="Reset"
+        onclick="resetAll()"
+      ></i>
+      <!-- Results Text -->
+      <div class="game-result-container">
+        <h3 class="game-result-text" id="gameResultText"></h3>
+      </div>
+    </div>
+  </body>
 </html>
