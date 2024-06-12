@@ -44,3 +44,28 @@ h1 {
 h2 {
   margin-bottom: 20px;
 }
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+  .project-container {
+    width: 95%;
+    height: 580px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .player1-container {
+    margin: 50px 0 25px 25px;
+  }
+
+  .far {
+    margin-right: 20px;
+  }
+
+  .reset-icon {
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+}
